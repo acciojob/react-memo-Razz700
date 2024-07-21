@@ -6,9 +6,10 @@ import ReactMemo from './ReactMemo';
 const App = () => {
     const [count,setcount]=useState(0);
     const [todo,settodo]=useState(['New Todo']);
-    const useMemovalue=useMemo((count)=>{
-return 1000000000+count;
+    const useMemovalue=useMemo(()=>{
+        return(1000000000+count);
     },[count]);
+  
   return (
     <div id='main'>
         <UseMemo count={count} setcount={setcount} todo={todo} settodo={settodo} />
