@@ -14,7 +14,7 @@ return 1000000000;
         <UseMemo todo={todo} settodo={settodo} />
         <hr/>
         <p>Count:{count}
-            <button id='incr-cnt' onClick={()=>setcount(count+1)}>+</button>
+            <button id='incr-cnt' onClick={()=>setcount(count+1)}>0</button>
         </p>
         <h2>Expensive Calculation</h2>
         <p>{useMemovalue}</p>
