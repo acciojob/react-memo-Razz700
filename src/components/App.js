@@ -17,7 +17,7 @@ return 1000000000;
             <button id='incr-cnt' onClick={()=>setcount(count+1)}>0</button>
         </p>
         <h2>Expensive Calculation</h2>
-        <p>{useMemovalue}</p>
+        <p id='calc'>{useMemovalue}</p>
         <hr/>
         <hr/>
            <ReactMemo/>

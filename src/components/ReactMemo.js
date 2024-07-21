@@ -16,7 +16,7 @@ setinput(val);
   return (
     <div>
         <input id='skill-input' value={input} onChange={handlechange} type='text' required/>
-        <button onClick={handleclick}>Add Skill</button>
+        <button id='skill-btn' onClick={handleclick}>Add Skill</button>
         <ul>
             {list.map((item,i)=><li key={'b'+i}>{item}</li>)}
         </ul>
