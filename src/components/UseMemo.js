@@ -8,7 +8,7 @@ const UseMemo = (props) => {
         </h1>
         <h2>My todos</h2>
         {props.todo.map((item,i)=><p key={'a'+i}>{item}</p>)}
-        <button onClick={()=>props.settodo(todo=>[...todo,'New Todo'])}>Add Todo</button>
+        <button id='add-todo-btn' onClick={()=>props.settodo(todo=>[...todo,'New Todo'])}>Add Todo</button>
     </div>
   )
 }
