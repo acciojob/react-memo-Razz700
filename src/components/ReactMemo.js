@@ -15,10 +15,11 @@ setinput(val);
     }
   return (
     <div>
+        <h2>React.memo</h2>
         <input id='skill-input' value={input} onChange={handlechange} type='text' required/>
         <button id='skill-btn' onClick={handleclick}>Add Skill</button>
         <ul>
-            {list.map((item,i)=><li key={'b'+i}>{item}</li>)}
+            {list.map((item,i)=><li id={'item-'+item} key={'b'+i}>{item}</li>)}
         </ul>
     </div>
   )

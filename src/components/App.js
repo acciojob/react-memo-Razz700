@@ -11,11 +11,8 @@ return 1000000000;
     },[])
   return (
     <div id='main'>
-        <UseMemo todo={todo} settodo={settodo} />
-        <hr/>
-        <p>Count:{count}
-            <button id='incr-cnt' onClick={()=>setcount(count+1)}>0</button>
-        </p>
+        <UseMemo count={count} setcount={setcount} todo={todo} settodo={settodo} />
+        
         <h2>Expensive Calculation</h2>
         <p id='calc'>{useMemovalue}</p>
         <hr/>
